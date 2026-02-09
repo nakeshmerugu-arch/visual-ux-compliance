@@ -1,0 +1,9 @@
+node_modules/
+dist/
+output/
+*.log
+.DS_Store
+compliance.config.yaml
+.env
+.env.*
+!.env.example

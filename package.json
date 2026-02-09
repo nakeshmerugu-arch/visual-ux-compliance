@@ -1,0 +1,22 @@
+{
+  "name": "visual-ux-compliance",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "compliance": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "run": "node dist/cli/index.js",
+    "compliance": "node dist/cli/index.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.3",
+    "webdriverio": "^8.46.0",
+    "yaml": "^2.8.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

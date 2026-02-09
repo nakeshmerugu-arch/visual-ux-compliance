@@ -1,0 +1,21 @@
+# Example rule configuration (YAML)
+# Use with loadRuleConfigFromFile or loadRuleConfig
+rules:
+  position:
+    tolerance: 5
+  size:
+    tolerance: 10
+    validateWidth: true
+    validateHeight: true
+  font-size:
+    tolerance: 2
+  font-family:
+    caseSensitive: false
+    allowAlternates: true
+  color:
+    tolerance: 15
+    property: both
+  text-content:
+    exactMatch: false
+    trimWhitespace: true
+    ignoreCase: false

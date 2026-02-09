@@ -1,0 +1,25 @@
+# Example compliance config (YAML)
+# Copy to compliance.config.yaml and fill in values
+
+figma:
+  fileKey: YOUR_FIGMA_FILE_KEY
+  accessToken: ${FIGMA_ACCESS_TOKEN}  # Use env var in practice
+  depth: 3
+
+appium:
+  serverUrl: http://127.0.0.1:4723
+  capabilities:
+    platformName: Android
+    "appium:automationName": UiAutomator2
+    "appium:app": /path/to/app.apk
+    "appium:deviceName": emulator-5554
+
+rules:
+  configPath: config/rules.yaml
+
+output:
+  dir: ./output
+  reportFilename: report.html
+  saveResultJson: true
+
+attachEvidence: true
